@@ -1,0 +1,11 @@
+<p>
+    <strong>Note:</strong>
+    <%= note.body %>
+  </p>
+
+  <p>
+    <%= link_to "Destroy Note", [note.task, note], data: {
+                  turbo_method: :delete,
+                  turbo_confirm: "Are you sure?"
+                } %>
+  </p>
